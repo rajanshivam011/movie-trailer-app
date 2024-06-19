@@ -1,0 +1,393 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #090a0e;
+  color: white;
+  width: 100%;
+}
+
+.max-center {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-content {
+  background-color: #090a0e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.app--name {
+  font-weight: 900;
+}
+.search--bar {
+  outline: none;
+  border-radius: 0.3rem;
+}
+.submit--btn {
+  padding: 3px 10px !important;
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+}
+
+.btn--close {
+  visibility: hidden;
+  padding: 3px 5px !important;
+}
+
+.container {
+  padding: 30px;
+  background-color: #0f1014;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.movie-cover {
+  width: 100%;
+  transition: transform 0.4s;
+  padding-top: 1rem;
+}
+
+.movie-title {
+  padding-top: 1.5rem;
+}
+.movie-cover:hover {
+  transform: scale(1.1);
+}
+
+.movie-placeholder {
+  min-height: 359px;
+  background-image: url(images/dummy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.4s;
+}
+.movie-placeholder:hover {
+  transform: scale(1.1);
+}
+
+.hero {
+  position: relative;
+  min-height: 500px;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+.hero-content {
+  max-width: 70%;
+  padding-bottom: 60px;
+}
+
+.hero-title {
+  font-size: 72px;
+  margin: 0;
+}
+
+.button {
+  background-color: #0f1014;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.6s;
+  border-radius: 0.5rem;
+}
+
+.button:hover {
+  background-color: white;
+  color: #0f1014;
+  padding: 10px 15px;
+}
+
+.youtube-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+} */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #090a0e;
+  color: #ffffff;
+}
+
+.center-max-size {
+  max-width: 63.75rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.938rem;
+  text-transform: uppercase;
+}
+
+.poster {
+  background-size: cover;
+  background-position: top center;
+  min-height: 37.5rem;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3.125rem;
+  position: relative;
+}
+
+.poster-content {
+  width: 80%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+
+.container {
+  background-color: #0f1014;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  /* padding-left: 40px;
+  padding-right: 40px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2.438rem;
+}
+
+.button {
+  margin: 1.25rem 0;
+  background: #0f1014;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0.625rem 0.938rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+}
+
+.button:hover {
+  box-shadow: 0 0.313rem 0.313rem rgba(0, 0, 0, 0.5);
+  background-color: white;
+  color: #0f1014;
+  transition: 1s;
+}
+
+.close-video {
+  position: absolute;
+  z-index: 2;
+  /* bottom: 0.625rem;
+  left: 0.625rem; */
+  right: 0.1rem;
+  top: 0.5rem;
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+
+  /* padding: 2px 10px;
+  margin-left: -40rem;
+  margin-right: -10rem;
+  visibility: hidden; */
+}
+
+.youtube-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.brand {
+  font-weight: bold;
+}
+
+/*-- MOVIE */
+
+.movie {
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.movie img {
+  height: 22.188rem;
+  max-width: 100%;
+}
+
+.movie-infos {
+  padding: 0.938rem 0;
+}
+
+.movie-title {
+  margin: 0;
+  transition: transform 0.4s;
+}
+
+.movie-placeholder {
+  min-height: 22.438rem;
+  background-image: url(images/dummy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.4s;
+}
+.movie-title:hover {
+  transform: scale(1.05);
+}
+
+.movie-voting {
+  position: absolute;
+  right: 0.313rem;
+  top: 0.313rem;
+  background-color: #0f1014;
+  border: 1px solid gray;
+  padding: 0.625rem;
+  font-size: 0.75rem;
+  border-radius: 1.563rem;
+}
+
+/** SEARCH **/
+.form {
+  position: relative;
+}
+
+.search {
+  border: 1px solid darkslategray;
+  outline: transparent;
+  background-color: transparent;
+  padding: 0.313rem 0.625rem;
+  border-radius: 1.563rem;
+  color: white;
+}
+
+/* .submit-search {
+  background: #0f1014;
+  color: white;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  padding: 0.188rem 0.938rem;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+} */
+
+.submit-search {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-search:hover {
+  box-shadow: 0 0.313rem 0.313rem rgba(0, 0, 0, 0.5);
+  color: #888;
+  transition: 1s;
+}
+
+@media (max-width: 930px) {
+  .movie-placeholder {
+    min-height: 22.438rem;
+    background-image: url(images/dummy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s;
+  }
+}
+
+@media (max-width: 852px) {
+  .poster-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .poster {
+    background-image: cover;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* .poster-content {
+    width: 100%;
+  } */
+  .poster-content p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 406px) {
+  .poster-content h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .search {
+    padding: 0.1rem 0.625rem;
+    width: 9rem;
+  }
+  .brand {
+    font-size: x-small;
+  }
+  .submit-search {
+    position: absolute;
+    font-size: x-small;
+    right: 5px;
+    top: 5px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 355px) {
+  .poster {
+    background-image: contain;
+  }
+  .play-video {
+    width: 7rem;
+  }
+  .poster-content .button {
+    font-size: 0.5rem;
+  }
+}
